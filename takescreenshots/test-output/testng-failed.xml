@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [dry run - screenshots]">
+  <listeners>
+    <listener class-name="com.seleniumtesting.screenshot.ListenerTest"/>
+  </listeners>
+  <test thread-count="5" name="screenshots(failed)">
+    <classes>
+      <class name="com.seleniumtesting.screenshot.ScreenshotsEx">
+        <methods>
+          <include name="launchDriver"/>
+          <include name="tearDown"/>
+          <include name="verifyHomePage"/>
+        </methods>
+      </class> <!-- com.seleniumtesting.screenshot.ScreenshotsEx -->
+    </classes>
+  </test> <!-- screenshots(failed) -->
+</suite> <!-- Failed suite [dry run - screenshots] -->
